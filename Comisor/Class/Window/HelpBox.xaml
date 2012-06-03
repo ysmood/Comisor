@@ -1,0 +1,54 @@
+﻿<ys:WindowBorderless
+		x:Class="Comisor.Class.HelpBox"
+		xmlns:ys="clr-namespace:ys"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Help"
+		Width="760"
+		Height="560"
+		SnapsToDevicePixels="True"
+		WindowStartupLocation="CenterScreen"
+		Loaded="Window_Loaded"
+		FontFamily="Microsoft YaHei"
+		PreviewKeyDown="Window_PreviewKeyDown">
+	<Control.Resources>
+		<LinearGradientBrush x:Key="fontBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FF242424" Offset="0" />
+			<GradientStop Color="#FF414141" Offset="1" />
+		</LinearGradientBrush>
+	</Control.Resources>
+	<Border x:Name="bdrMain" Padding="3" Margin="10"
+			CornerRadius="3"
+			BorderBrush="White"
+			BorderThickness="1"
+			Background="#efff">
+		<Border.Effect>
+			<DropShadowEffect Direction="270" Opacity="0.3" BlurRadius="5" ShadowDepth="1" Color="DodgerBlue" />
+		</Border.Effect>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="138*" />
+				<ColumnDefinition Width="404*" />
+				<ColumnDefinition Width="116*" />
+				<ColumnDefinition Width="52*" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="34" />
+				<RowDefinition Height="463*" />
+			</Grid.RowDefinitions>
+			<Label Content="Title" x:Name="title" FontWeight="Bold" Foreground="{StaticResource fontBrush}" FontSize="15" Margin="5,5,0,0" />
+			<Button x:Name="btnUpdate" Content="Update" Click="Update" Grid.Column="2" Width="70" Cursor="Arrow" Margin="0,5,8,5" HorizontalAlignment="Right"/>
+			<Button x:Name="btnOK" Click="btnOK_Click" Grid.Column="3" Width="36" Cursor="Arrow" Margin="0,5,8,5" HorizontalAlignment="Right">
+				OK
+			</Button>
+			<Label x:Name="lbInfo" FontFamily="Arial" Grid.Column="1" FontWeight="Bold" Foreground="{StaticResource fontBrush}" Margin="0,10,0,0">
+			Information
+			</Label>
+			<RichTextBox x:Name="txtReadme" Margin="5,0,5,5" Padding="5" Grid.Row="1"
+					IsReadOnly="True"
+					Background="Transparent"
+					HorizontalScrollBarVisibility="Auto"
+					VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="4" />
+		</Grid>
+	</Border>
+</ys:WindowBorderless>

@@ -1,0 +1,6 @@
+﻿<ys:WindowBorderless
+	xmlns:ys="clr-namespace:ys"
+	x:Class="Comisor.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Comisor" />

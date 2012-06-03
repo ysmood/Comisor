@@ -1,0 +1,1 @@
+Count the power usage of a PC per month.

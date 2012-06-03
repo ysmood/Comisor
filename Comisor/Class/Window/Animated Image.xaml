@@ -1,0 +1,10 @@
+﻿<Window x:Class="Comisor.Class.Animated_Image"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GIF"
+		SnapsToDevicePixels="True"
+		WindowStartupLocation="CenterScreen"
+		WindowStyle="ToolWindow"
+		PreviewKeyDown="Window_PreviewKeyDown">
+	<WebBrowser x:Name="webBrowser"/>
+</Window>

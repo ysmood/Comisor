@@ -1,0 +1,6 @@
+﻿bin/
+obj/
+Debug/
+Release/
+*.user
+*.suo
