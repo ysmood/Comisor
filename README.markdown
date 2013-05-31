@@ -1,5 +1,7 @@
 # Comisor Viewer
 
+Sep 2010 ys
+
 [下载最新版](http://ysmood.org/upload/comisor/comisor.zip).
 
 #### 支持的图片格式：
